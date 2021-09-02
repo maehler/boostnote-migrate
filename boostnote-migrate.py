@@ -156,7 +156,6 @@ def folders_list(ctx):
 	""" List folders
 	"""
 	for id, f in get_folders(ctx).items():
-		print(f)
 		print(f'name: {f["name"]}\nid: {id}\nworkspace: {f["workspaceId"]}\n')
 
 @folders.command('new')
